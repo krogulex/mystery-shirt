@@ -1,0 +1,16 @@
+.button {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    color: $color-primary;
+    background-color: $color-background;
+    border: none;
+    transition: all 400ms ease-in-out;
+    border: 1px solid $color-accent;
+    border-radius: 25px;
+  
+    &:hover,
+    &:focus {
+      background-color: $color-background;
+    }
+}

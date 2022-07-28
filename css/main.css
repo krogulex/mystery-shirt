@@ -112,6 +112,7 @@ a {
   align-items: center;
   text-align: center;
   padding-top: 100px;
+  border-right: 1px solid #55FFDA;
 }
 
 .menu-container.is-open {
@@ -180,6 +181,47 @@ a {
   height: 60px;
 }
 
+.cart-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60vw;
+  height: 100vh;
+  background-color: #103B6A;
+  z-index: 999;
+  transform: translateX(170%);
+  transition: transform 400ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 100px;
+  border-left: 1px solid #55FFDA;
+}
+
+.cart-container.is-open {
+  transform: translateX(66.66%);
+}
+
+.cart__text {
+  margin-bottom: 50px;
+}
+
+.button {
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  color: #2264B0;
+  background-color: #569ADA;
+  border: none;
+  transition: all 400ms ease-in-out;
+  border: 1px solid #55FFDA;
+  border-radius: 25px;
+}
+.button:hover, .button:focus {
+  background-color: #569ADA;
+}
+
 .header {
   background-color: #fff;
 }
@@ -203,6 +245,21 @@ a {
   outline: none;
 }
 
+.menu__cart {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
 .menu__icon {
   width: 40px;
   height: 40px;
@@ -211,14 +268,6 @@ a {
 }
 .menu__icon:hover, .menu__icon:focus {
   fill: #55FFDA;
-}
-
-.cart__link {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .cart__icon {
@@ -269,10 +318,10 @@ a {
     transition: all 400ms ease-in-out;
   }
   .menu-desktop__link:hover, .menu-desktop__link:focus {
-    color: #103B6A;
+    color: #55FFDA;
   }
   .menu-desktop__link--active {
-    color: #103B6A;
+    color: #55FFDA;
   }
 }
 .title {
@@ -335,7 +384,7 @@ a {
   }
 }
 .about {
-  background-color: #103B6A;
+  background-color: #569ADA;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -359,12 +408,11 @@ a {
   height: 50px;
   text-align: center;
   color: #fff;
-  background-color: #103B6A;
   border: none;
   transition: all 400ms ease-in-out;
 }
 .about__button:hover, .about__button:focus {
-  background-color: #103B6A;
+  background-color: #569ADA;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -398,7 +446,6 @@ a {
   }
 }
 .contact {
-  background-color: #103B6A;
   padding-top: 50px;
 }
 

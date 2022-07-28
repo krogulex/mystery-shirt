@@ -18,6 +18,20 @@
   border-radius: 50%;
   outline: none;
 }
+.menu__cart {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
 .menu__icon {
   width: 40px;
   height: 40px;
@@ -28,13 +42,6 @@
   &:focus {
     fill: $color-accent;
   }
-}
-.cart__link {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .cart__icon {
   height: 25px;
@@ -88,10 +95,10 @@
   
     &:hover,
     &:focus {
-      color: $color-button;
+      color: $color-accent;
     }
   }
   .menu-desktop__link--active {
-    color: $color-button;
+    color: $color-accent;
   }
 }
