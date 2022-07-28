@@ -1,0 +1,83 @@
+.header {
+  background-color: $color-tertiary;
+}
+.header__mobile {
+  margin-left: auto;
+}
+.header__desktop {
+  display: none;
+}
+.menu-desktop__link {
+  color: $color-accent;
+  font-weight: 400;
+  transition: all 400ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: $color-button;
+  }
+}
+.menu-desktop__link--active {
+  color: $color-button;
+}
+.menu__button {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+.menu__icon {
+  width: 40px;
+  height: 40px;
+  fill: $color-primary;
+  transition: all 400ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    fill: $color-accent;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .header__mobile {
+    display: none;
+  }
+  .header__desktop {
+    display: flex;
+    margin-left: auto;
+  }
+  .menu-desktop {
+    display: flex;
+  }
+  .menu-desktop__item:not(:last-child) {
+    margin-right: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    position: sticky;
+    top: 0;
+  }
+  .header__mobile {
+    display: none;
+  }
+  .header__desktop {
+    display: flex;
+    margin-left: auto;
+  }
+  .menu-desktop {
+    display: flex;
+  }
+  .menu-desktop__item:not(:last-child) {
+    margin-right: 60px;
+  }
+}

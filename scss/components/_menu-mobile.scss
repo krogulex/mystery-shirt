@@ -1,0 +1,82 @@
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-background;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 400ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu__button--close {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+.menu__button--close-icon {
+  width: 40px;
+  height: 40px;
+  fill: $color-primary;
+  transition: all 400ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    fill: $color-accent;
+  }
+}
+.menu-mobile__link {
+  text-decoration: none;
+  color: $color-primary;
+  transition: all 400ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+}
+.menu-mobile {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+}
+
+.menu-mobile__link--active {
+  color: $color-accent;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .menu-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-container {
+    display: none;
+  }
+}

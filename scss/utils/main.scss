@@ -1,0 +1,15 @@
+@import "../utils/variables";
+
+@import "../base/common.scss";
+@import "../base/container.scss";
+
+@import "../components/logo";
+@import "../components/menu-mobile";
+@import "../components/border";
+@import "../components/form.scss";
+
+@import "../layout/header";
+@import "../layout/title";
+@import "../layout/about";
+@import "../layout/contact";
+@import "../layout/footer";
