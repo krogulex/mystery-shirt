@@ -9,18 +9,16 @@
   <link rel="icon" type="image/x-icon" href="images/favicon.png">
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
   <header class="header" id="header">
     <div class="container">
-      <a class="logo__link" href="./index.html">
-        <img class="logo__img" src="images\Logo_Semi_Robotics_achromatyczne.png">
-      </a>
       <div class="header__mobile">
         <button class="menu__button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
           <svg class="menu__icon">
@@ -32,19 +30,25 @@
         <ul class="menu-desktop">
           <li class="menu-desktop__item"><a href="#header"
               class="menu-desktop__link menu-desktop__link--active">Home</a></li>
-          <li class="menu-desktop__item"><a href="#about" class="menu-desktop__link">O projekcie</a></li>
-          <li class="menu-desktop__item"><a href="#contact" class="menu-desktop__link">Kontakt</a></li>
+          <li class="menu-desktop__item"><a href="#shop" class="menu-desktop__link">Shop</a></li>
+          <li class="menu-desktop__item"><a href="#about" class="menu-desktop__link">About</a></li>
+          <li class="menu-desktop__item"><a href="#contact" class="menu-desktop__link">Contact</a></li>
         </ul>
       </div>
+      <a class="logo__link" href="./index.html">
+        <img class="logo__img" src="images/Mystery-shirt-logo.png">
+      </a>
+      <a class="cart__link" href="">
+        <svg class="cart__icon">
+          <use href="./images/sprite.svg#icon-cart"></use>
+        </svg>
+      </a>
     </div>
   </header>
   <main>
     <section class="title">
       <div class="container">
         <ul class="title__list">
-          <li class="title__item">
-            <img class="title__img" src="images\rest-home.jpg">
-          </li>
           <li class="title__item title__item--padding">
             <h1 class="title__headline">Semi Robotics</h1>
             <span class="border"></span>
@@ -90,10 +94,12 @@
     </button>
     <div>
       <ul class="menu-mobile">
-        <li class="menu-mobile__item"><a href="#header" class="menu-mobile__link menu-mobile__link--active">Home</a>
-        </li>
-        <li class="menu-mobile__item"><a href="#about" class="menu-mobile__link">O projekcie</a></li>
-        <li class="menu-mobile__item"><a href="#contact" class="menu-mobile__link">Kontakt</a></li>
+        <li class="menu-desktop__item"><a href="#header"
+          class="menu-mobile__link menu-desktop__link--active">Home</a></li>
+      <li class="menu-mobile__item"><a href="#shop" class="menu-mobile__link">Shop</a></li>
+      <li class="menu-mobile__item"><a href="#cart" class="menu-mobile__link">Cart</a></li>
+      <li class="menu-mobile__item"><a href="#about" class="menu-mobile__link">About</a></li>
+      <li class="menu-mobile__item"><a href="#contact" class="menu-mobile__link">Contact</a></li>
       </ul>
     </div>
   </div>
