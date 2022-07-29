@@ -1,22 +1,25 @@
 .title {
-  background-color: bisque;
+  background-color: $color-background;
+  text-align: center;
 }
 .title__img {
   width: 100%;
-  height: 100vh;
   object-fit: cover;
+}
+.title__item {
+  padding: 20px 0px;
 }
 .title__item--padding {
   padding: 50px 20px;
-  color: $color-accent;
+  padding-bottom: 15px;
 }
 .title__headline {
-  font-size: 37px;
-  line-height: 1.5;
-  font-weight: 300;
+  font-size: 40px;
+  font-weight: 600;
 }
 .title__text {
-  font-weight: 300;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
