@@ -77,7 +77,8 @@
           <li class="how-it-works__item">Enjoy your mystery!</li>
         </ol>
         <p class="how-it-works__text">
-          <b>Please note:</b> All of the shirts are 100% authentic. The shirts inside the Mystery Boxes are completely random.
+          <b>Please note:</b> All of the shirts are 100% authentic. The shirts inside the Mystery Boxes are completely
+          random.
         </p>
       </div>
     </section>
@@ -87,9 +88,7 @@
         <ul class="shop__list">
           <li class="shop__item">
             <figure class="shop__box">
-              <img class="shop__img" src="images/Men's-club-mystery-box.jpg"
-                alt="Men's-club-mystery-box"
-                >
+              <img class="shop__img" src="images/Men's-club-mystery-box.jpg" alt="Men's-club-mystery-box">
               <figcaption>
                 <h2 class="shop__product">Men&#8216;s club football mystery shirt</h2>
                 <p class="shop__price">&#8364; 40</p>
@@ -104,9 +103,7 @@
           </li>
           <li class="shop__item">
             <figure class="shop__box">
-              <img class="shop__img" src="images/Men's-national-mystery-box.png"
-                alt="Men's-national-mystery-box"
-                >
+              <img class="shop__img" src="images/Men's-national-mystery-box.png" alt="Men's-national-mystery-box">
               <figcaption>
                 <h2 class="shop__product">Men&#8216;s national football mystery shirt</h2>
                 <p class="shop__price">&#8364; 40</p>
@@ -121,9 +118,7 @@
           </li>
           <li class="shop__item">
             <figure class="shop__box">
-              <img class="shop__img" src="images/kids-mystery-box.jpg"
-                alt="kids-mystery-box."
-                >
+              <img class="shop__img" src="images/kids-mystery-box.jpg" alt="kids-mystery-box.">
               <figcaption>
                 <h2 class="shop__product">Kid&#8216;s football mystery shirt</h2>
                 <p class="shop__price">&#8364; 25</p>
@@ -138,11 +133,9 @@
           </li>
           <li class="shop__item">
             <figure class="shop__box">
-              <img class="shop__img" src="images/Women's-mystery-box.jpg"
-                alt="Women's-mystery-box"
-                >
+              <img class="shop__img" src="images/Women's-mystery-box.jpg" alt="Women's-mystery-box">
               <figcaption>
-                <h2 class="shop__product">Woman&#8216;s football shirt</h2>
+                <h2 class="shop__product">Woman&#8216;s football mystery shirt</h2>
                 <p class="shop__price">&#8364; 30</p>
                 <p class="shop__cart">
                   <svg class="shop__icon">
@@ -156,10 +149,63 @@
         </ul>
       </div>
     </section>
+    <section class="slick section" id="customer-reviews">
+      <div class="container slick__container">
+        <h2 class="section__headline">Customer reviews</h2>
+        <ul class="slick__slider">
+          <li class="slick__item">
+            <img class="slick__image" src="images/slider/1-customer.jpg" alt="First Customer photo" />
+            <div class="slick__text-thumb">
+              <p class="slick__text">
+                Absolutely gassed with my New Amsterdam shirt, exactly the type of shirt I want to get from a mystery
+                box. Shirt is 100% authentic. I would recommend it to everyone!
+              </p>
+            </div>
+            <span class="slick__label">Thomas, Germany</span>
+          </li>
+          <li class="slick__item">
+            <img class="slick__image" src="images/slider/2-customer.jpg" alt="Second Customer photo" />
+            <div class="slick__text-thumb">
+              <p class="slick__text">
+                This is our sons 3rd shirt from you guys and hes loved every single one… hes been so excited every time
+                to see what he gets.
+                We have even got his cousin into it now too
+              </p>
+            </div>
+            <span class="slick__label">Harry, Ireland</span>
+          </li>
+          <li class="slick__item">
+            <img class="slick__image" src="images/slider/3-customer.jpg" alt="Third Customer photo" />
+            <div class="slick__text-thumb">
+              <p class="slick__text">
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+                hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+              </p>
+            </div>
+            <span class="slick__label">Nick, Spain</span>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
-  <footer class="footer">
+  <footer class="footer section">
     <div class="container">
-      <p>&#169; 2022 by Semi Robotics</p>
+      <form class="bottom-form" method="post">
+        <label>
+          <input class="bottom-form__input" type="email" name="email" placeholder="E-mail">
+        </label>
+        <button class="button" type="submit">
+          Zapisz się
+        </button>
+      </form>
+      <div class="payment">
+        <img class="payment__logo" src="images/blik.png" alt="blik">
+        <img class="payment__logo" src="images/bluemedia.png" alt="bluemedia">
+        <img class="payment__logo" src="images/inspot.png" alt="inspot">
+        <img class="payment__logo" src="images/mastercard.png" alt="mastercard">
+        <img class="payment__logo" src="images/mbank.png" alt="mbank">
+        <img class="payment__logo" src="images/przelewy24.png" alt="przelewy24">
+      </div>
     </div>
   </footer>
   <div class="menu-container js-menu-container" id="mobile-menu">
@@ -195,6 +241,10 @@
   <script src="./js/mobile-menu.js"></script>
   <script src="./js/mobile-cart.js"></script>
   <script src="/js/scroll.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/slider.js"></script>
 </body>
 
 </html>

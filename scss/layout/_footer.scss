@@ -1,9 +1,17 @@
 .footer {
-  background-color: $color-accent;
-  height: 100px;
+  background-color: $color-background;
   color: $color-tertiary;
+}
+.payment {
   display: flex;
-  justify-content: center;
-  text-align: center;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.payment__logo:not(:last-child) {
+  margin-right: 20px;
+}
+.payment__logo {
+  height: 20px;
 }

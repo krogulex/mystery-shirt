@@ -6,7 +6,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 25px;
   color: $color-background-menu;
 }
 .shop__item {
@@ -41,8 +40,8 @@
     font-size: 20px;
 }
 .shop__icon {
-    height: 15px;
-    width: 15px;
+    height: 12px;
+    width: 12px;
     fill: $color-background-menu;
 
     &:hover,
