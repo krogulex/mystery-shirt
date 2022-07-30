@@ -49,6 +49,7 @@
   line-height: 1.25;
   padding-left: 16px;
   color: $color-tertiary;
+  transition: all 400ms ease;
 
 
   &:focus-within {

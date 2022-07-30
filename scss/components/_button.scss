@@ -8,6 +8,7 @@
     transition: all 400ms ease-in-out;
     border: 1px solid $color-accent;
     border-radius: 25px;
+    transition: all 400ms ease;
   
     &:hover,
     &:focus {
@@ -17,6 +18,7 @@
 .button--cart {
   background-color: $color-background;
   width: 170px;
+  transition: all 400ms ease;
 
   &:hover,
     &:focus {

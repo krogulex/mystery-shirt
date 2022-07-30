@@ -19,47 +19,67 @@
   margin: 0;
   border-radius: 4px;
   background-color: #fff;
+  transition: all 400ms ease;
 
   &:hover,
   &:focus {
     box-shadow: $color-accent 0px 0px 0px 2px, $color-accent 0px 4px 6px -1px,
-    $color-accent 0px 1px 0px inset;
-}
+      $color-accent 0px 1px 0px inset;
+  }
 }
 .shop__img {
   width: 100%;
 }
 .shop__product {
-    padding: 10px;
-    font-size: 15px;
-    font-weight: 600;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 600;
 }
 .shop__price {
-    padding: 0px 10px;
-    font-weight: 600;
-    font-size: 20px;
-}
-.shop__icon {
-    height: 12px;
-    width: 12px;
-    fill: $color-background-menu;
-
-    &:hover,
-    &:focus {
-      fill: $color-accent;
-    }
-  
+  padding: 0px 10px;
+  font-weight: 600;
+  font-size: 20px;
 }
 .shop__cart {
-    font-size: 15px;
-    font-weight: 600;
-    padding: 10px;
-    text-align: center;
+  display: flex;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 400ms ease;
+  fill: $color-background-menu;
 
-    &:hover,
-    &:focus {
-      fill: $color-accent;
-      color: $color-accent;
-    }
+  &:hover,
+  &:focus {
+    color: $color-accent;
+    fill: $color-accent;
+  }
 }
-
+.shop__icon {
+  height: 12px;
+  width: 12px;
+  margin-right: 10px;
+}
+.shop__box {
+  position: relative;
+}
+.overlay__hidden {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  transform: translateY(-100%);
+  transition: all 400ms ease;
+}
+.overlay__image {
+  width: 100%;
+  height: 100%;
+}
+.shop__item:hover .overlay,
+.shop__item:focus .overlay {
+  transform: translateY(0);
+}

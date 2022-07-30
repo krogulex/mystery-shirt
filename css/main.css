@@ -140,7 +140,7 @@ a {
   width: 40px;
   height: 40px;
   fill: #fff;
-  transition: all 400ms ease-in-out;
+  transition: all 400ms ease;
 }
 .menu__button--close-icon:hover, .menu__button--close-icon:focus {
   fill: #55FFDA;
@@ -149,7 +149,7 @@ a {
 .menu-mobile__link {
   text-decoration: none;
   color: #fff;
-  transition: all 400ms ease-in-out;
+  transition: all 400ms ease;
 }
 .menu-mobile__link:hover, .menu-mobile__link:focus {
   color: #55FFDA;
@@ -222,6 +222,7 @@ a {
   transition: all 400ms ease-in-out;
   border: 1px solid #55FFDA;
   border-radius: 25px;
+  transition: all 400ms ease;
 }
 .button:hover, .button:focus {
   background-color: #569ADA;
@@ -230,6 +231,7 @@ a {
 .button--cart {
   background-color: #569ADA;
   width: 170px;
+  transition: all 400ms ease;
 }
 .button--cart:hover, .button--cart:focus {
   background-color: #103B6A;
@@ -290,7 +292,7 @@ a {
   width: 40px;
   height: 40px;
   fill: #2264B0;
-  transition: all 400ms ease-in-out;
+  transition: all 400ms ease;
 }
 .menu__icon:hover, .menu__icon:focus {
   fill: #55FFDA;
@@ -300,6 +302,7 @@ a {
   height: 25px;
   width: 25px;
   fill: #2264B0;
+  transition: all 400ms ease;
 }
 .cart__icon:hover, .cart__icon:focus {
   fill: #55FFDA;
@@ -464,65 +467,6 @@ a {
     margin-bottom: 30px;
   }
 }
-.contact {
-  padding-top: 50px;
-}
-
-.contact__headline {
-  font-size: 21px;
-}
-
-.contact__text {
-  margin-bottom: 20px;
-}
-
-.contact__img-div {
-  display: flex;
-  justify-content: center;
-}
-
-.contact__img {
-  width: 100%;
-  max-width: 200px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .contact__headline {
-    font-size: 24px;
-  }
-  .contact__img {
-    width: 100%;
-    max-width: 220px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contact {
-    padding-top: 0px;
-  }
-  .contact__img-div {
-    width: 50%;
-    display: flex;
-    align-items: flex-end;
-  }
-  .contact__img {
-    max-width: 700px;
-    max-height: 700px;
-    padding: 0 80px;
-  }
-  .contact__item-div {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    padding: 60px 80px;
-    padding-top: 80px;
-  }
-  .contact__headline {
-    font-size: 30px;
-  }
-  .contact__text {
-    margin-bottom: 30px;
-  }
-}
 .footer {
   background-color: #569ADA;
   color: #fff;
@@ -580,6 +524,7 @@ a {
   line-height: 1.25;
   padding-left: 16px;
   color: #fff;
+  transition: all 400ms ease;
 }
 .form__input:focus-within {
   border: 1px solid #55FFDA;
@@ -635,6 +580,7 @@ a {
   margin: 0;
   border-radius: 4px;
   background-color: #fff;
+  transition: all 400ms ease;
 }
 .shop__box:hover, .shop__box:focus {
   box-shadow: #55FFDA 0px 0px 0px 2px, #55FFDA 0px 4px 6px -1px, #55FFDA 0px 1px 0px inset;
@@ -656,24 +602,52 @@ a {
   font-size: 20px;
 }
 
-.shop__icon {
-  height: 12px;
-  width: 12px;
-  fill: #103B6A;
-}
-.shop__icon:hover, .shop__icon:focus {
-  fill: #55FFDA;
-}
-
 .shop__cart {
+  display: flex;
   font-size: 15px;
   font-weight: 600;
   padding: 10px;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  transition: all 400ms ease;
+  fill: #103B6A;
 }
 .shop__cart:hover, .shop__cart:focus {
-  fill: #55FFDA;
   color: #55FFDA;
+  fill: #55FFDA;
+}
+
+.shop__icon {
+  height: 12px;
+  width: 12px;
+  margin-right: 10px;
+}
+
+.shop__box {
+  position: relative;
+}
+
+.overlay__hidden {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  transform: translateY(-100%);
+  transition: all 400ms ease;
+}
+
+.overlay__image {
+  width: 100%;
+  height: 100%;
+}
+
+.shop__item:hover .overlay,
+.shop__item:focus .overlay {
+  transform: translateY(0);
 }
 
 .slick {
