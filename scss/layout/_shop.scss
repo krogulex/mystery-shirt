@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex-basis: calc((100% - 30px) / 2);
+  flex-basis: calc((100% - 40px) / 2);
   margin-bottom: 25px;
 }
 .shop__box {
@@ -20,6 +20,7 @@
   border-radius: 4px;
   background-color: #fff;
   transition: all 400ms ease;
+  max-width: 390px;
 
   &:hover,
   &:focus {
@@ -75,11 +76,47 @@
   transform: translateY(-100%);
   transition: all 400ms ease;
 }
-.overlay__image {
+.overlay__img {
   width: 100%;
-  height: 100%;
 }
 .shop__item:hover .overlay,
 .shop__item:focus .overlay {
   transform: translateY(0);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .shop__item {
+    margin-bottom: 40px;
+}
+.shop__list {
+  justify-content: center;
+}
+.shop__item {
+  flex-basis: calc((100%) / 2);
+  padding-right: 40px;
+  padding-left: 40px;
+  justify-content: center;
+}
+.shop__img {
+  width: 100%;
+}
+.shop__product {
+  padding: 10px;
+  font-size: 20px;
+}
+.shop__price {
+  padding: 0px 10px;
+  font-size: 26px;
+}
+.shop__cart {
+  font-size: 20px;
+}
+.shop__icon {
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+}
+}
+
+@media screen and (min-width: 1200px) {
 }

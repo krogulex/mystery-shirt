@@ -40,8 +40,8 @@
 }
 
 .menu__button--close-icon {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   fill: $color-tertiary;
   transition: all 400ms ease;
 
@@ -62,7 +62,6 @@
 }
 .menu-mobile {
   font-weight: 400;
-  font-size: 16px;
   line-height: 40px;
   letter-spacing: 0.02em;
 }
@@ -71,10 +70,7 @@
   color: $color-accent;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .menu-container {
-    display: none;
-  }
+@media screen and (min-width: 768px) and (max-width: 1200px) { 
 }
 
 @media screen and (min-width: 1200px) {

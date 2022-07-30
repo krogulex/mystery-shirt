@@ -4,7 +4,7 @@
 }
 .title__img {
   width: 100%;
-  object-fit: cover;
+
 }
 .title__item {
   padding: 20px 0px;
@@ -25,13 +25,21 @@
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .title__img {
-    height: 400px;
+    max-width: 750px;
+  }
+  .title__item--img {
+    display: flex;
+    justify-content: center;
   }
   .title__headline {
     font-size: 40px;
   }
   .title__item--padding {
     padding: 50px 40px;
+  }
+  .title__headline {
+    font-size: 50px;
+    font-weight: 700;
   }
 }
 

@@ -1,9 +1,27 @@
 .logo__img {
   height: 60px;
 }
-.logo__link {
+.logo__link--desktop {
+  display: none;
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
+  .logo__img {
+    height: 70px;
+  }
 }
 @media screen and (min-width: 1200px) {
+  .logo__link {
+    display: none;
+  }
+  .logo__link--desktop {
+   position: absolute;
+   top: 0;
+   right: 50%;
+   left: 50%;
+   display: flex;
+   justify-content: center;
+  }
+  .logo__img {
+    height: 90px;
+  }
 }

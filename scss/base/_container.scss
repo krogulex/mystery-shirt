@@ -17,7 +17,13 @@
   .container {
     width: 100%;
     padding: 0 40px;
+
+    .header & {
   }
+    .shop & {
+      padding: 0;
+    }
+}
 }
 @media screen and (min-width: 1200px) {
   .container {
@@ -26,7 +32,13 @@
 
     .header & {
       padding: 0 40px;
-    }
+      height: 140px;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding-bottom: 20px;
+  }
     .about & {
       display: flex;
       justify-content: space-between;

@@ -14,7 +14,7 @@
   content: "";
   position: absolute;
   bottom: -48px;
-  left: 45%;
+  left: 46.5%;
   width: 32px;
   height: 4px;
   background-image: url(../images/slider/dots.svg);
@@ -47,13 +47,10 @@
   margin-bottom: 30px;
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.86;
   color: #103B6A;
   text-align: center;
 }
 
-// Slider styles //
 
 .slick-list {
   overflow: hidden;
@@ -83,6 +80,9 @@
   border-radius: 50%;
   margin-right: 18px;
 }
+.slick__slider .slick-dots li button {
+  background-color: #d9d9d9;
+}
 .slick__slider .slick-dots li.slick-active button {
   background-color: #103B6A;
 }
@@ -110,3 +110,14 @@
   margin-right: 18px;
   background-color: transparent;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .slick__image {
+    height: 400px;
+}
+.slick__text-thumb {
+  margin-bottom: 40px;
+}
+}
+
+@media screen and (min-width: 1200px) { }
