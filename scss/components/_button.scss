@@ -14,3 +14,12 @@
       background-color: $color-background;
     }
 }
+.button--cart {
+  background-color: $color-background;
+  width: 170px;
+
+  &:hover,
+    &:focus {
+      background-color: $color-background-menu;
+    }
+}

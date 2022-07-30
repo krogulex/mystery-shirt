@@ -11,7 +11,8 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./css/main.min.css" />
 </head>
@@ -188,16 +189,69 @@
       </div>
     </section>
   </main>
-  <footer class="footer section">
+  <footer class="footer section" id="contact">
     <div class="container">
-      <form class="bottom-form" method="post">
-        <label>
-          <input class="bottom-form__input" type="email" name="email" placeholder="E-mail">
-        </label>
-        <button class="button" type="submit">
-          Zapisz się
-        </button>
-      </form>
+      <div>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <h3 class="footer__headline">Contact</h3>
+            <address class="address">
+              Mystery Shirt
+              Warsaw, 01-420
+              <p class="">
+                <a class="contact__link" href="mailto:contact@mysteryshirt.com">contact@mysteryshirt.com</a>
+              </p>
+              <p class="">
+                <a class="contact__link" href="tel:+48111111111">+48 111 111 111</a>
+              </p>
+            </address>
+          </li>
+          <li class="footer__item">
+            <h3 class="footer__headline">Join us</h3>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg class="social__icon">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg class="social__icon">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg class="social__icon">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg class="social__icon">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="newsletter">
+        <h3 class="footer__headline">Sign in to newsletter and get 10% discount</h3>
+        <form class="form" method="post">
+          <label>
+            <input class="form__input" type="email" name="email" placeholder="E-mail">
+          </label>
+          <button class="button" type="submit">
+            Sign in
+          </button>
+        </form>
+      </div>
       <div class="payment">
         <img class="payment__logo" src="images/blik.png" alt="blik">
         <img class="payment__logo" src="images/bluemedia.png" alt="bluemedia">
@@ -205,6 +259,9 @@
         <img class="payment__logo" src="images/mastercard.png" alt="mastercard">
         <img class="payment__logo" src="images/mbank.png" alt="mbank">
         <img class="payment__logo" src="images/przelewy24.png" alt="przelewy24">
+      </div>
+      <div class="footer__copyright">
+        <p>&#169; Mystery Shirt 2022</p>
       </div>
     </div>
   </footer>
@@ -216,11 +273,11 @@
     </button>
     <div>
       <ul class="menu-mobile">
-        <li class="menu-desktop__item"><a href="#header" class="menu-mobile__link menu-desktop__link--active">Home</a>
+        <li class="menu-mobile__item"><a href="#header" class="menu-mobile__link menu-mobile__link--active">Home</a>
         </li>
-        <li class="menu-mobile__item"><a href="#shop" class="menu-mobile__link">Shop</a></li>
-        <li class="menu-mobile__item"><a href="#cart" class="menu-mobile__link">Cart</a></li>
         <li class="menu-mobile__item"><a href="#how-it-works" class="menu-mobile__link">How it works?</a></li>
+        <li class="menu-mobile__item"><a href="#shop" class="menu-mobile__link">Shop</a></li>
+        <li class="menu-mobile__item"><a href="#customer-reviews" class="menu-mobile__link">Customer reviews</a></li>
         <li class="menu-mobile__item"><a href="#contact" class="menu-mobile__link">Contact</a></li>
       </ul>
     </div>
@@ -232,7 +289,8 @@
       </svg>
     </button>
     <p class="cart__text">Your bag is empty</p>
-    <button class="cart__button button">
+    <p class="cart__text cart__text--annotation">The shopping cart will be linked to the store in the future</p>
+    <button class="button button--cart">
       <a href="#shop" class="cart__link">
         Continue shopping
       </a>

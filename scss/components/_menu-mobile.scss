@@ -42,7 +42,7 @@
 .menu__button--close-icon {
   width: 40px;
   height: 40px;
-  fill: $color-primary;
+  fill: $color-tertiary;
   transition: all 400ms ease-in-out;
 
   &:hover,
@@ -52,7 +52,7 @@
 }
 .menu-mobile__link {
   text-decoration: none;
-  color: $color-primary;
+  color: $color-tertiary;
   transition: all 400ms ease-in-out;
 
   &:hover,
