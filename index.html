@@ -60,6 +60,7 @@
               Purchase random football shirt specially for You
             </p>
             <button class="button">
+              <!-- Zwiększyć padding? -->
               <a href="#shop" class="">
                 Shop now
               </a>
@@ -215,7 +216,7 @@
   </main>
   <footer class="footer section" id="contact">
     <div class="container">
-      <div>
+      <div class="footer__divs">
         <ul class="footer__list">
           <li class="footer__item">
             <h3 class="footer__headline">Contact</h3>
@@ -261,20 +262,21 @@
                   </svg>
                 </a>
               </li>
+              <li class="footer__item footer__item--newsletter">
+                <h3 class="footer__headline">Sign in to newsletter and get 10% discount</h3>
+                <form class="form" method="post">
+                  <label>
+                    <input class="form__input" type="email" name="email" placeholder="E-mail">
+                  </label>
+                  <button class="button" type="submit">
+                    Sign in
+                  </button>
+                </form>
             </ul>
           </li>
         </ul>
-      </div>
-      <div class="newsletter">
-        <h3 class="footer__headline">Sign in to newsletter and get 10% discount</h3>
-        <form class="form" method="post">
-          <label>
-            <input class="form__input" type="email" name="email" placeholder="E-mail">
-          </label>
-          <button class="button" type="submit">
-            Sign in
-          </button>
-        </form>
+        <div class="newsletter">
+        </div>
       </div>
       <div class="payment">
         <img class="payment__logo" src="images/blik.png" alt="blik">
@@ -283,9 +285,9 @@
         <img class="payment__logo" src="images/mastercard.png" alt="mastercard">
         <img class="payment__logo" src="images/mbank.png" alt="mbank">
         <img class="payment__logo" src="images/przelewy24.png" alt="przelewy24">
-      </div>
-      <div class="footer__copyright">
-        <p>&#169; Mystery Shirt 2022</p>
+        <div class="footer__copyright">
+          <p>&#169; Mystery Shirt 2022</p>
+        </div>
       </div>
     </div>
   </footer>

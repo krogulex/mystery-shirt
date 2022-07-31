@@ -84,7 +84,7 @@ a {
 @media screen and (min-width: 1200px) {
   .container {
     width: 100%;
-    padding: 0 0;
+    padding: 0 40px;
   }
   .header .container {
     padding: 0 40px;
@@ -541,7 +541,7 @@ a {
   fill: #55FFDA;
 }
 
-.newsletter {
+.footer__item--newsletter {
   text-align: center;
   margin-bottom: 30px;
 }
@@ -592,6 +592,13 @@ a {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__divs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .shop {
   background-color: #103B6A;
   padding-bottom: 25px;
@@ -768,16 +775,7 @@ a {
   color: #2264B0;
   text-align: center;
   letter-spacing: 0.04em;
-}
-
-.slick__text::after {
-  content: "";
-  position: absolute;
-  bottom: -48px;
-  left: 46.5%;
-  width: 32px;
-  height: 4px;
-  background-image: url(../images/slider/dots.svg);
+  max-width: 600px;
 }
 
 .slick__text-thumb {
@@ -789,6 +787,8 @@ a {
   padding-right: 50px;
   padding-left: 50px;
   background-color: #fff;
+  display: flex;
+  justify-content: center;
 }
 
 .slick__image {

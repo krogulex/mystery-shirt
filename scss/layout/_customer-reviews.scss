@@ -9,15 +9,7 @@
   color: $color-primary;
   text-align: center;
   letter-spacing: 0.04em;
-}
-.slick__text::after {
-  content: "";
-  position: absolute;
-  bottom: -48px;
-  left: 46.5%;
-  width: 32px;
-  height: 4px;
-  background-image: url(../images/slider/dots.svg);
+  max-width: 600px;
 }
 
 .slick__text-thumb {
@@ -29,6 +21,8 @@
   padding-right: 50px;
   padding-left: 50px;
   background-color: $color-tertiary;
+  display: flex;
+  justify-content: center;
 }
 
 .slick__image {

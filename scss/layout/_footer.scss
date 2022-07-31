@@ -31,7 +31,7 @@
     fill: $color-accent;
   }
 }
-.newsletter {
+.footer__item--newsletter {
   text-align: center;
   margin-bottom: 30px;
 }
@@ -77,4 +77,15 @@
 }
 .footer__copyright {
   text-align: center;
+}
+
+
+@media screen and (min-width: 1200px) { 
+.footer__divs {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.footer__item {
+}
 }
