@@ -25,7 +25,6 @@
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .title__img {
-    max-width: 750px;
   }
   .title__item--img {
     display: flex;
@@ -47,7 +46,8 @@
   .title__img {
     width: 100%;
     height: 100%;
-    min-height: 700px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .title__list {
     display: flex;
@@ -64,5 +64,9 @@
   .title__headline {
     font-size: 70px;
     line-height: 1.6;
+  }
+  .title__text {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }

@@ -76,12 +76,6 @@
   .menu-desktop {
     display: flex;
   }
-  .menu-desktop__link {
-   color: $color-primary;
-  }
-  .menu-desktop__item:not(:last-child) {
-    margin-right: 40px;
-  }
   .menu__cart {
     align-items: flex-end;
   }
@@ -89,27 +83,13 @@
     width: 30px;
     height: 30px;
   }
-  .header {
-    position: sticky;
-    top: 0;
-  }
-  .header__mobile {
-    display: none;
-  }
-  .header__desktop {
-    display: flex;
-    margin-left: auto;
-  }
-  .menu-desktop {
-    display: flex;
-  }
   .menu-desktop__item:not(:last-child) {
-    margin-right: 60px;
+    margin-right: 50px;
   }
   .menu-desktop__link {
-    color: $color-accent;
-    font-weight: 400;
-    transition: all 400ms ease-in-out;
+    color: $color-primary;
+    font-weight: 600;
+    transition: all 400ms ease;
   
     &:hover,
     &:focus {
@@ -117,6 +97,6 @@
     }
   }
   .menu-desktop__link--active {
-    color: $color-accent;
+    color: $color-background;
   }
 }

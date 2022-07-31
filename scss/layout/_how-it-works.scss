@@ -15,33 +15,24 @@
   text-align: left;
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  .about__headline {
-    font-size: 24px;
-  }
-  .about__second-headline {
-    font-size: 19px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
-  .about {
-    padding-top: 80px;
-    padding-bottom: 60px;
+  .how-it-works__list {
+    max-width: 900px;
+    text-align: left;
+    margin-bottom: 25px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .about__headline {
-    font-size: 30px;
-  }
-  .about__second-headline {
-    font-size: 24px;
-  }
-  .about__item {
-    width: 50%;
-    padding: 0 80px;
-  }
-  .about__second-headline {
+  .how-it-works__item:not(:last-child) {
+    margin-bottom: 15px;
+   }
+   .how-it-works__list {
     margin-bottom: 30px;
-  }
-  .about__text {
-    margin-bottom: 30px;
+   }
+   .how-it-works__text {
+    text-align: center;
   }
 }
