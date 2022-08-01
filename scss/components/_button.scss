@@ -1,21 +1,22 @@
 .button {
-    width: 150px;
-    height: 50px;
-    font-size: 16px;
-    font-family: $main-font;
-    text-align: center;
-    color: $color-tertiary;
-    background-color: $color-background-menu;
-    border: none;
-    transition: all 400ms ease-in-out;
-    border: 1px solid $color-accent;
-    border-radius: 25px;
-    transition: all 400ms ease;
-  
-    &:hover,
-    &:focus {
-      background-color: $color-background;
-    }
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+  font-family: $main-font;
+  text-align: center;
+  color: $color-tertiary;
+  background-color: $color-background-menu;
+  border: none;
+  transition: all 400ms ease-in-out;
+  border: 1px solid $color-accent;
+  border-radius: 25px;
+  transition: all 400ms ease;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $color-background;
+  }
 }
 .button--cart {
   background-color: $color-background;
@@ -23,9 +24,9 @@
   transition: all 400ms ease;
 
   &:hover,
-    &:focus {
-      background-color: $color-background-menu;
-    }
+  &:focus {
+    background-color: $color-background-menu;
+  }
 }
 @media screen and (min-width: 1200px) {
   .button {

@@ -87,42 +87,42 @@
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .shop__item {
     margin-bottom: 40px;
-}
-.shop__list {
-  justify-content: center;
-}
-.shop__item {
-  flex-basis: calc((100%) / 2);
-  padding-right: 40px;
-  padding-left: 40px;
-  justify-content: center;
-}
-.shop__img {
-  width: 100%;
-}
-.shop__product {
-  padding: 10px;
-  font-size: 20px;
-}
-.shop__price {
-  padding: 0px 10px;
-  font-size: 26px;
-}
-.shop__cart {
-  font-size: 20px;
-}
-.shop__icon {
-  height: 16px;
-  width: 16px;
-  margin-right: 10px;
-}
+  }
+  .shop__list {
+    justify-content: center;
+  }
+  .shop__item {
+    flex-basis: calc((100%) / 2);
+    padding-right: 40px;
+    padding-left: 40px;
+    justify-content: center;
+  }
+  .shop__img {
+    width: 100%;
+  }
+  .shop__product {
+    padding: 10px;
+    font-size: 20px;
+  }
+  .shop__price {
+    padding: 0px 10px;
+    font-size: 26px;
+  }
+  .shop__cart {
+    font-size: 20px;
+  }
+  .shop__icon {
+    height: 16px;
+    width: 16px;
+    margin-right: 10px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .shop {
-   padding-left: 40px;
-   padding-right: 40px;
-   padding-bottom: 70px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 70px;
   }
   .shop__list {
     display: flex;

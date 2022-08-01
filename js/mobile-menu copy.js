@@ -27,13 +27,13 @@
   });
 
   window.onload = function() {
-    var anchors = document.getElementsByClassName('menu-mobile__link');
+    var anchors = document.getElementsByClassName("menu-mobile__link");
     for(var i = 0; i < anchors.length; i++) {
         var anchor = anchors[i];
         anchor.onclick = function() {
           toggleMenu();
         }
     }
-}
+};
 
 })();

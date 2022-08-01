@@ -32,11 +32,13 @@
       </div>
       <div class="header__desktop">
         <ul class="menu-desktop">
-          <li class="menu-desktop__item"><a href="#header" class="menu-desktop__link menu-desktop__link--active">Home</a>
+          <li class="menu-desktop__item"><a href="#header"
+              class="menu-desktop__link menu-desktop__link--active">Home</a>
           </li>
           <li class="menu-desktop__item"><a href="#how-it-works" class="menu-desktop__link">How it works?</a></li>
           <li class="menu-desktop__item"><a href="#shop" class="menu-desktop__link">Shop</a></li>
-          <li class="menu-desktop__item"><a href="#customer-reviews" class="menu-desktop__link">Customer reviews</a></li>
+          <li class="menu-desktop__item"><a href="#customer-reviews" class="menu-desktop__link">Customer reviews</a>
+          </li>
           <li class="menu-desktop__item"><a href="#contact" class="menu-desktop__link">Contact</a></li>
         </ul>
       </div>
@@ -59,12 +61,11 @@
             <p class="title__text">
               Purchase random football shirt specially for You
             </p>
-            <button class="button">
-              <!-- Zwiększyć padding? -->
-              <a href="#shop" class="">
+            <a href="#shop" class="">
+              <button class="button">
                 Shop now
-              </a>
-            </button>
+              </button>
+            </a>
           </li>
           <li class="title__item title__item--img">
             <img class="title__img" src="images/football-shirts.png">
@@ -262,29 +263,30 @@
                   </svg>
                 </a>
               </li>
-              <li class="footer__item footer__item--newsletter">
-                <h3 class="footer__headline">Sign in to newsletter and get 10% discount</h3>
-                <form class="form" method="post">
-                  <label>
-                    <input class="form__input" type="email" name="email" placeholder="E-mail">
-                  </label>
-                  <button class="button" type="submit">
-                    Sign in
-                  </button>
-                </form>
             </ul>
           </li>
+          <li class="footer__item footer__item--newsletter">
+            <h3 class="footer__headline">Sign in to newsletter and get 10% discount</h3>
+            <form class="form" method="post">
+              <label>
+                <input class="form__input" type="email" name="email" placeholder="E-mail">
+              </label>
+              <button class="button" type="submit">
+                Sign in
+              </button>
+            </form>
+          </li>
         </ul>
-        <div class="newsletter">
-        </div>
       </div>
-      <div class="payment">
-        <img class="payment__logo" src="images/blik.png" alt="blik">
-        <img class="payment__logo" src="images/bluemedia.png" alt="bluemedia">
-        <img class="payment__logo" src="images/inspot.png" alt="inspot">
-        <img class="payment__logo" src="images/mastercard.png" alt="mastercard">
-        <img class="payment__logo" src="images/mbank.png" alt="mbank">
-        <img class="payment__logo" src="images/przelewy24.png" alt="przelewy24">
+      <div>
+        <div class="payment">
+          <img class="payment__logo" src="images/blik.png" alt="blik">
+          <img class="payment__logo" src="images/bluemedia.png" alt="bluemedia">
+          <img class="payment__logo" src="images/inspot.png" alt="inspot">
+          <img class="payment__logo" src="images/mastercard.png" alt="mastercard">
+          <img class="payment__logo" src="images/mbank.png" alt="mbank">
+          <img class="payment__logo" src="images/przelewy24.png" alt="przelewy24">
+        </div>
         <div class="footer__copyright">
           <p>&#169; Mystery Shirt 2022</p>
         </div>
@@ -316,11 +318,11 @@
     </button>
     <p class="cart__text">Your bag is empty</p>
     <p class="cart__text cart__text--annotation">The shopping cart will be linked to the store in the future</p>
-    <button class="button button--cart">
-      <a href="#shop" class="cart__link">
+    <a href="#shop" class="cart__link">
+      <button class="button button--cart">
         Continue shopping
-      </a>
-    </button>
+      </button>
+    </a>
   </div>
   <script src="./js/mobile-menu.js"></script>
   <script src="./js/mobile-cart.js"></script>

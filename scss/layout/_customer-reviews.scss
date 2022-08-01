@@ -41,10 +41,9 @@
   margin-bottom: 30px;
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
-  color: #103B6A;
+  color: #103b6a;
   text-align: center;
 }
-
 
 .slick-list {
   overflow: hidden;
@@ -78,7 +77,7 @@
   background-color: #d9d9d9;
 }
 .slick__slider .slick-dots li.slick-active button {
-  background-color: #103B6A;
+  background-color: #103b6a;
 }
 
 .slick__slider .slick-dots li:first-child button {
@@ -108,10 +107,11 @@
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .slick__image {
     height: 400px;
-}
-.slick__text-thumb {
-  margin-bottom: 40px;
-}
+  }
+  .slick__text-thumb {
+    margin-bottom: 40px;
+  }
 }
 
-@media screen and (min-width: 1200px) { }
+@media screen and (min-width: 1200px) {
+}
