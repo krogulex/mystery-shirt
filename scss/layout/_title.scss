@@ -21,6 +21,22 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.title__img.rotate-y {
+  animation: rotateY 1500ms 1 alternate ease-in-out;
+}
+@keyframes rotateY {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  50% {
+    transform: rotateY(30deg);
+  }
+
+  100% {
+    transform: rotateY(0deg);
+  }
+}
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .title__img {

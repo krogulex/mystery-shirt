@@ -45,11 +45,6 @@
       <a class="logo__link" href="./index.html">
         <img class="logo__img" src="images/Mystery-shirt-logo.png">
       </a>
-      <button class="menu__cart js-open-cart" aria-expanded="false" aria-controls="mobile-cart">
-        <svg class="cart__icon">
-          <use href="./images/sprite.svg#icon-cart"></use>
-        </svg>
-      </button>
     </div>
   </header>
   <main>
@@ -68,7 +63,7 @@
             </a>
           </li>
           <li class="title__item title__item--img">
-            <img class="title__img" src="images/football-shirts.png">
+            <img class="title__img rotate-y" src="images/football-shirts.png">
           </li>
         </ul>
       </div>
@@ -310,22 +305,7 @@
       </ul>
     </div>
   </div>
-  <div class="cart-container js-cart-container" id="mobile-cart">
-    <button class="menu__button--close js-close-cart">
-      <svg class="menu__button--close-icon">
-        <use href="./images/sprite.svg#icon-menu-close"></use>
-      </svg>
-    </button>
-    <p class="cart__text">Your bag is empty</p>
-    <p class="cart__text cart__text--annotation">The shopping cart will be linked to the store in the future</p>
-    <a href="#shop" class="cart__link">
-      <button class="button button--cart">
-        Continue shopping
-      </button>
-    </a>
-  </div>
   <script src="./js/mobile-menu.js"></script>
-  <script src="./js/mobile-cart.js"></script>
   <script src="/js/scroll.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

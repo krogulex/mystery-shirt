@@ -181,6 +181,14 @@ a {
   display: none;
 }
 
+.logo__link {
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .logo__img {
     height: 70px;
@@ -424,6 +432,21 @@ a {
   padding-bottom: 20px;
 }
 
+.title__img.rotate-y {
+  animation: rotateY 1500ms 1 alternate ease-in-out;
+}
+
+@keyframes rotateY {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(30deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .title__item--img {
     display: flex;

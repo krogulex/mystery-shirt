@@ -4,6 +4,13 @@
 .logo__link--desktop {
   display: none;
 }
+.logo__link {
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+}
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .logo__img {
     height: 70px;
